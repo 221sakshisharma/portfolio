@@ -1,0 +1,138 @@
+@import "tailwindcss";
+
+/* Amiamie Regular */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts2/Amiamie-Regular-BF63d9b9a69832c.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Regular Italic */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts2/Amiamie-Italic-BF63d9b995b963c.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Amiamie Light */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts2/Amiamie-Light-BF63d9b9a65411d.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Light Italic */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts2/Amiamie-LightItalic-BF63d9b9a410228.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Amiamie Black */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts2/Amiamie-Black-BF63d9b9a5e0d20.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Black Italic */
+@font-face {
+  font-family: "Amiamie";
+  src: url("/fonts2/Amiamie-BlackItalic-BF63d9b99875a84.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Amiamie Round Regular */
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts2/Amiamie-RegularRound-BF63d9b9a657279.otf")
+    format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Round Black */
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts2/Amiamie-BlackRound-BF63d9b9972d751.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Amiamie Round Black Italic */
+@font-face {
+  font-family: "Amiamie-Round";
+  src: url("/fonts2/Amiamie-BlackItalicRound-BF63d9b9a6acd84.otf")
+    format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@theme {
+  --color-primary: #e5e5e0;
+  --color-DarkLava: #393632;
+  --color-SageGray: #8b8b73;
+  --color-gold: #cfa355;
+
+  --font-amiamie: "Amiamie", sans-serif;
+
+  --font-amiamie-round: "Amiamie-Round", sans-serif;
+
+  --animate-marquee: marquee 40s infinite linear;
+
+  @keyframes marquee {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+}
+
+body {
+  background: #e5e5e0;
+  color: black;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: var(--font-amiamie);
+}
+
+@utility clip-path {
+  clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+}
+
+@utility banner-text-responsive {
+  @apply text-[68px] sm:text-[118px] md:text-[126px] lg:text-[140px] leading-9 sm:leading-16 lg:leading-19;
+}
+
+@utility value-text-responsive {
+  @apply text-xl md:text-[26px] lg:text-[32px];
+}
+
+@utility marquee-text-responsive {
+  @apply text-[28px] sm:text-[36px] lg:text-[42px];
+}
+
+@utility contact-text-responsive {
+  @apply text-[30px] sm:text-[45px] md:text-[60px] lg:text-[70px];
+}
+
+@utility skills-border-responsive {
+  @apply w-8 md:w-15 lg:w-20 border-t-6 border-gold;
+}
