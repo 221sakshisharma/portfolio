@@ -55,7 +55,7 @@ const About = () => {
   ⚙️ Driven to transform complex challenges into clean, reliable, and scalable systems.  
 
   🚀 Focused on building technology that endures, adapts, and truly delivers value.`
-  
+
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection title={"About"} subtitle={"Code with purpose, Built to scale"} text={text} textColor={"text-white"} withScrollTrigger={true} />
@@ -64,7 +64,7 @@ const About = () => {
           alt="profile"
           className="w-md md:w-xs rounded-3xl"
         />
-        <AnimatedTextLines text={aboutText} withScrollTrigger={true} className={"w-full font-light tracking-wide text-white/80 leading-7 text-md md:text-xl md:leading-8 md:tracking-wider "}/>
+        <AnimatedTextLines text={aboutText} withScrollTrigger={true} className={"w-full font-light tracking-wide text-white/80 leading-9 text-md md:text-xl md:leading-10 md:tracking-wider "}/>
       </div>
 
       
