@@ -39,6 +39,8 @@ const Navbar = () => {
 
     })
 
+    // i always wanna show the menu buttin it is open
+
     useEffect(() => {
         let lastScroll = window.scrollY // probably 0 when the navbar mounted
 
@@ -46,15 +48,19 @@ const Navbar = () => {
             const currentScroll = window.scrollY;
             // show menu either when we are going up or we are near the top
 
-            setShowMenu(currentScroll < lastScroll || currentScroll < 20)
-
+            if (isOpen) {
+                setShowMenu(true);
+            } else {
+                setShowMenu(currentScroll < lastScroll || currentScroll < 20)
+            }
+            
             lastScroll = currentScroll;
         }
         // passive: true is for boosting scrolling performance
         window.addEventListener("scroll", handleScroll, { passive: true });
 
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [])
+    }, [isOpen])
 
     const toggleOpen = () => {
         if (isOpen) {
@@ -62,6 +68,7 @@ const Navbar = () => {
         } else {
             tl.current.play();
         }
+
         setIsOpen(!isOpen);
     }
 
@@ -70,7 +77,7 @@ const Navbar = () => {
             <nav
                 ref={navRef} className=' fixed z-50 flex flex-col justify-between w-full h-full bg-black px-10 py-8 uppercase text-white/80 gap-y-10 md:w-1/2 md:left-1/2'>
                 <div className='flex flex-col text-5xl gap-y-2 md:text-6xl lg-text-8xl'>
-                    {["home", "about", "services", "work", "contact"].map((section, i) =>
+                    {["home", "services", "about", "projects", "contact"].map((section, i) =>
                         <div key={i} ref={(el) => linkedRef.current[i] = el}>
                             <Link to={section} smooth className='transition-all duration-300 cursor-pointer hover:text-white'>{section}</Link>
                         </div>

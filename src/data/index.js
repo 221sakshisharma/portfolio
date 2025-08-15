@@ -26,14 +26,12 @@ export const projects = [
     description:
       "An AI-powered fintech platform designed to empower women through chit fund creation, financial literacy quizzes, and community learning.",
     href: "",
-    image: "/assets/projects/home-decor-store.jpg",
-    bgImage: "/assets/backgrounds/blanket.jpg",
+    image: "/assets/projects/sakhicircle.png",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Node.js" },
-      { id: 3, name: "Express.js" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "Tailwind CSS" },
+      { id: 3, name: "SQLite" },
+      { id: 4, name: "Tailwind CSS" },
     ],
   },
   {
@@ -42,8 +40,7 @@ export const projects = [
     description:
       "A dynamic blogging platform that allows users to create, edit, and read posts with a modern UI and markdown support.",
     href: "",
-    image: "/assets/projects/blog-app.jpg",
-    bgImage: "/assets/backgrounds/paper.jpg",
+    image: "/assets/projects/blogapp.png",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Appwrite" },
@@ -53,27 +50,11 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Music Genre Classifier",
-    description:
-      "A deep learning model that predicts the genre of a music file, supporting audio uploads and YouTube link conversion.",
-    href: "",
-    image: "/assets/projects/music-genre.jpg",
-    bgImage: "/assets/backgrounds/waves.jpg",
-    frameworks: [
-      { id: 1, name: "Python" },
-      { id: 2, name: "TensorFlow/Keras" },
-      { id: 3, name: "Librosa" },
-      { id: 4, name: "Flask" },
-    ],
-  },
-  {
-    id: 4,
     name: "YouTube Video Downloader",
     description:
       "A simple desktop application that lets users download YouTube videos using a clean Tkinter-based GUI.",
     href: "",
-    image: "/assets/projects/youtube-downloader.jpg",
-    bgImage: "/assets/backgrounds/terminal.jpg",
+    image: "/assets/projects/youtube.png",
     frameworks: [
       { id: 1, name: "Python" },
       { id: 2, name: "Tkinter" },
@@ -81,33 +62,31 @@ export const projects = [
     ],
   },
   {
-    id: 5,
+    id: 4,
     name: "LeafLift",
     description:
       "A HealthTech solution for smart hospital management including AI-based EMR scanning, appointment tracking, and personalized recommendations.",
     href: "",
-    image: "/assets/projects/leaflift.jpg",
-    bgImage: "/assets/backgrounds/clinic.jpg",
+    image: "/assets/projects/leaflift.png",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Flask" },
-      { id: 3, name: "Python" },
-      { id: 4, name: "Machine Learning" },
+      { id: 1, name: "HTML" },
+      { id: 2, name: "CSS" },
+      { id: 3, name: "Javascript" },
+      { id: 4, name: "Maps API" },
     ],
   },
   {
-    id: 6,
+    id: 5,
     name: "Weather App",
     description:
       "A modern weather forecasting app that displays real-time weather data using OpenWeatherMap API with a responsive UI.",
     href: "",
-    image: "/assets/projects/weather-app.jpg",
-    bgImage: "/assets/backgrounds/clouds.jpg",
+    image: "/assets/projects/weatherapp.png",
     frameworks: [
       { id: 1, name: "HTML" },
-      { id: 2, name: "JavaScript" },
-      { id: 3, name: "OpenWeatherMap API" },
-      { id: 4, name: "CSS3" },
+      { id: 2, name: "CSS" },
+      { id: 3, name: "Javascript" },
+      { id: 4, name: "OpenWeatherMap API" },
     ],
   },
 ];
