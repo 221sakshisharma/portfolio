@@ -43,15 +43,20 @@ const About = () => {
     
   })
 
-  const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  
+    const text = `passionate about building software 
+  that is both technically sound and impactful`;
+
+  const aboutText = `💡 Solid foundation in CS fundamentals, data structures, algorithms, and modern software practices.  
+
+  🖥️ Proficient in React and Tailwind, crafting responsive, intuitive, and polished interfaces.  
+
+  🤖 Experienced in building ML and deep learning models, along with end-to-end AI solutions.  
+
+  ⚙️ Driven to transform complex challenges into clean, reliable, and scalable systems.  
+
+  🚀 Focused on building technology that endures, adapts, and truly delivers value.`
+
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection title={"About"} subtitle={"Code with purpose, Built to scale"} text={text} textColor={"text-white"} withScrollTrigger={true} />
@@ -60,7 +65,7 @@ const About = () => {
           alt="profile"
           className="w-md md:w-xs rounded-3xl"
         />
-        <AnimatedTextLines text={aboutText} withScrollTrigger={true} className={"w-full font-light tracking-wide text-white/80 leading-7 text-md md:text-xl md:leading-8 md:tracking-wider "}/>
+        <AnimatedTextLines text={aboutText} withScrollTrigger={true} className={"w-full font-light tracking-wide text-white/80 leading-9 text-md md:text-xl md:leading-10 md:tracking-wider "}/>
       </div>
 
       

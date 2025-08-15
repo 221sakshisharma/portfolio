@@ -46,7 +46,7 @@ const SkillsSummary = () => {
 
     })
     return (
-        <section className="flex flex-col mt-20 overflow-hidden items-center font-light leading-snug text-center mb-42 contact-text-responsive">
+        <section id="services" className="flex flex-col mt-20 overflow-hidden items-center font-light leading-snug text-center mb-42 contact-text-responsive">
             <div id="skills-title-1">
                 <p>Architechture</p>
             </div>

@@ -5,15 +5,15 @@ import { socials } from "../data";
 import gsap from "gsap";
 
 export const Contact = () => {
-  const text = `Got a question, how or project Idea?
-    I'd love to hear from you and discus further!`;
-//   const items = [
-//     "just imagin, I code",
-//     "just imagin, I code",
-//     "just imagin, I code",
-//     "just imagin, I code",
-//     "just imagin, I code",
-//   ];
+  const text = `Got a project idea or something you’d like to discuss?  
+Let’s connect and make it happen!`;
+  //   const items = [
+  //     "just imagin, I code",
+  //     "just imagin, I code",
+  //     "just imagin, I code",
+  //     "just imagin, I code",
+  //     "just imagin, I code",
+  //   ];
   useGSAP(() => {
     gsap.from(".social-link", {
       y: 100,
