@@ -3,7 +3,8 @@ import Hero from "./sections/Hero"
 import SkillsSummary from "./sections/SkillsSummary"
 import About from "./sections/About";
 import Projects from "./sections/Projects";
-
+import ContactSummary from "./sections/ContactSummary";
+import {Contact} from "./sections/Contact";
 function App() {
 
   return (
@@ -13,7 +14,8 @@ function App() {
       <SkillsSummary />
       <About />
       <Projects/>
-      <section id="about" className="min-h-screen"></section>
+      <ContactSummary/>
+      <Contact/>
     </>
   )
 }

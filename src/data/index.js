@@ -1,3 +1,5 @@
+import { exp } from "three/tsl";
+
 export const socials = [
   {
     name: "Instagram",
@@ -24,8 +26,8 @@ export const projects = [
     description:
       "An AI-powered fintech platform designed to empower women through chit fund creation, financial literacy quizzes, and community learning.",
     href: "",
-    image: "/assets/projects/sakhi-circle.jpg",
-    bgImage: "/assets/backgrounds/finance.jpg",
+    image: "/assets/projects/home-decor-store.jpg",
+    bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Node.js" },
