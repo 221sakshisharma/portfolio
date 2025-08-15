@@ -167,7 +167,7 @@ const Projects = () => {
               >
                 {currentIndex !== null && (
                   <img
-                    src={projects[0].image}
+                    src={projects[currentIndex].image}
                     alt="preview"
                     className="object-cover w-full h-full"
                   />
