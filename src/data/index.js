@@ -1,5 +1,3 @@
-import { exp } from "three/tsl";
-
 export const socials = [
   {
     name: "Instagram",

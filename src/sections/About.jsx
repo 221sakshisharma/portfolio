@@ -43,8 +43,7 @@ const About = () => {
     
   })
 
-  
-    const text = `passionate about building software 
+  const text = `passionate about building software 
   that is both technically sound and impactful`;
 
   const aboutText = `💡 Solid foundation in CS fundamentals, data structures, algorithms, and modern software practices.  
