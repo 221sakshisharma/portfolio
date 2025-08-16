@@ -112,7 +112,8 @@ const Projects = () => {
               {projects.map((project, index) => (
                 <div
                   key={project.id}
-                  id="project"
+                  id={project.id}
+                  onClick={() => window.open(project.href, "_blank")}
                   className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0"
                   onMouseEnter={() => handleMouseEnter(index)}
                   onMouseLeave={() => handleMouseLeave(index)}
@@ -146,12 +147,10 @@ const Projects = () => {
                     ))}
                   </div>
                   {/* mobile preview image */}
-                  <div className="relative flex items-center justify-center px-10 md:hidden h-[400px]">
-                    <img
-                      src={project.bgImage}
-                      alt={`${project.name}-bg-image`}
-                      className="object-cover w-full h-full rounded-md brightness-50"
-                    />
+                  <div 
+                  onClick={() => window.open(project.href, "_blank")}
+                  className="relative flex items-center justify-center px-10 md:hidden h-[400px]">
+                    <div className='w-full h-full border-2 rounded-md'></div>
                     <img
                       src={project.image}
                       alt={`${project.name}-image`}

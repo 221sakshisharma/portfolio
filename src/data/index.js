@@ -1,5 +1,3 @@
-import { exp } from "three/tsl";
-
 export const socials = [
   {
     name: "Instagram",
@@ -25,7 +23,7 @@ export const projects = [
     name: "Sakhi Circle",
     description:
       "An AI-powered fintech platform designed to empower women through chit fund creation, financial literacy quizzes, and community learning.",
-    href: "",
+    href: "https://sakhicircle.vercel.app/",
     image: "/assets/projects/sakhicircle.png",
     frameworks: [
       { id: 1, name: "React" },
@@ -39,7 +37,7 @@ export const projects = [
     name: "Blog App",
     description:
       "A dynamic blogging platform that allows users to create, edit, and read posts with a modern UI and markdown support.",
-    href: "",
+    href: "https://blog-app-eta-sandy.vercel.app/",
     image: "/assets/projects/blogapp.png",
     frameworks: [
       { id: 1, name: "React" },
@@ -53,7 +51,7 @@ export const projects = [
     name: "YouTube Video Downloader",
     description:
       "A simple desktop application that lets users download YouTube videos using a clean Tkinter-based GUI.",
-    href: "",
+    href: "https://github.com/221sakshisharma/Python-Projects",
     image: "/assets/projects/youtube.png",
     frameworks: [
       { id: 1, name: "Python" },
@@ -66,7 +64,7 @@ export const projects = [
     name: "LeafLift",
     description:
       "A HealthTech solution for smart hospital management including AI-based EMR scanning, appointment tracking, and personalized recommendations.",
-    href: "",
+    href: "https://github.com/221sakshisharma/LeafLift",
     image: "/assets/projects/leaflift.png",
     frameworks: [
       { id: 1, name: "HTML" },
@@ -80,7 +78,7 @@ export const projects = [
     name: "Weather App",
     description:
       "A modern weather forecasting app that displays real-time weather data using OpenWeatherMap API with a responsive UI.",
-    href: "",
+    href: "https://221sakshisharma.github.io/weather-app/",
     image: "/assets/projects/weatherapp.png",
     frameworks: [
       { id: 1, name: "HTML" },
