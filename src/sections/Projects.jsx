@@ -98,7 +98,7 @@ const Projects = () => {
   };
 
   return (
-    <section id="projects" className='min-h-screen flex flex-col'>
+    <section id="about" className='min-h-screen flex flex-col'>
       <AnimatedHeaderSection
               subtitle={"Crafted with passion, built to perform"} 
               title={"Projects"}
