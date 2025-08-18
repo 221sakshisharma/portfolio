@@ -15,10 +15,10 @@ const About = () => {
 
   useGSAP(() => {
 
-     gsap.to("#about", {
+     gsap.to(".go-inside", {
       scale: 0.95,
       scrollTrigger: {
-        trigger: "#about",
+        trigger: ".go-inside",
         start: "bottom 80%",
         end: "bottom 20%",
         scrub: true,
@@ -57,7 +57,7 @@ const About = () => {
   🚀 Focused on building technology that endures, adapts, and truly delivers value.`
 
   return (
-    <section id="about" className="min-h-screen bg-black rounded-b-4xl">
+    <section id="about" className="go-inside min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection title={"About"} subtitle={"Code with purpose, Built to scale"} text={text} textColor={"text-white"} withScrollTrigger={true} />
 <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 lg:flex-row">        <img ref={imgRef}
           src="images/profilebw.png"

@@ -1,6 +1,5 @@
 import { useGSAP } from "@gsap/react";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
-import Marquee from "../components/Marquee";
 import { socials } from "../data";
 import gsap from "gsap";
 
@@ -31,7 +30,7 @@ I’d love to chat and explore it with you!`;
   return (
     <section
       id="contact"
-      className="flex flex-col justify-between min-h-screen bg-black"
+      className="flex flex-col justify-between min-h-screen bg-black overflow-hidden"
     >
       <div>
         <AnimatedHeaderSection
@@ -41,7 +40,7 @@ I’d love to chat and explore it with you!`;
           textColor={"text-white/90"}
           withScrollTrigger={true}
         />
-        <div className="flex px-10 font-light text-white uppercase lg:text-[32px] text-[26px] leading-none mb-10">
+        <div className="flex px-10 font-light text-white uppercase lg:text-[32px] text-[26px] leading-none">
           <div className="flex flex-col w-full gap-10">
             <div className="social-link">
               <h2>E-mail</h2>
@@ -77,7 +76,6 @@ I’d love to chat and explore it with you!`;
           </div>
         </div>
       </div>
-      {/* <Marquee items={items} className="text-white bg-transparent" /> */}
     </section>
   );
 };
